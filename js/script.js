@@ -1,4 +1,4 @@
-const mark = 40
+const mark = 91
 const name = "Md Kamruzzaman"
 
 if(mark < 0 || mark > 100 ){
