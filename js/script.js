@@ -1,7 +1,7 @@
-const mark = 91
+const mark = 0
 const name = "Md Kamruzzaman"
 
-if(mark < 0 || mark > 100 ){
+if(mark < -1 || mark > 100 ){
    console.log("Invalid Mark Entered");
 }
 else if(mark >= 33 && mark <40 ){
