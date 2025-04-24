@@ -1,3 +1,35 @@
+const tasks = [
+   {day: "Saturday" , task: "Grocery shopping", completed: false }, 
+   {day: "Sunday" , task: "Weekly meal prep", completed: false }, 
+   {day: "Monday" , task: "Team meeting", completed: true }, 
+   {day: "Tuesday" , task: "Project deadline", completed: false }, 
+   {day: "Wednesday" , task: "Gym workout", completed: true }, 
+   {day: "Thursday" , task: "Doctor appointment", completed: false }, 
+   {day: "Friday" , task: "Vacation with Friends", completed: true }, 
+]
+
+
+function Mytask (){
+   tasks.map(item =>{
+      // if(item.completed === true){
+      //    console.log(item.task + " " + item.day + " " + "Completed" );
+      // }
+      // else {
+      //    console.log(item.task + " " + item.day + " " + "Not Completed" );
+      // }
+
+      console.log(item.day , " " , item.task , " " , (item.completed ? "Completed" : "Not Completed")); 
+   })
+}
+
+Mytask()
+
+
+
+
+
+// ========================== Mark sheet ============================
+
 const mark = 91
 const name = "Md Kamruzzaman"
 
@@ -26,3 +58,6 @@ else {
    console.log(name + " " + "you are Faild ");
    
 }
+
+
+
