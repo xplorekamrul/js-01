@@ -9,41 +9,40 @@ formVlaues.addEventListener("submit", (e) => {
   const physics = Number(document.querySelector("#physics").value);
   const chemistry = Number(document.querySelector("#chemistry").value);
   const higherMath = Number(document.querySelector("#higherMath").value);
-  const result = document.querySelector("#result")
+  const result = document.querySelector("#result");
 
   const average = (math + english + physics + chemistry + higherMath) / 5;
 
   console.log(average);
 
-      if (average < -1 || average > 100) {
-        alert("Invalid Mark Entered");
-        result.innerHTML= ("Invalid Mark Entered")
-      } else if (average >= 33 && average < 40) {
-        alert(name + " " + "you got D Grade");
-        result.innerHTML=( name + " " + "You Got D Grade")
-      } else if (average >= 40 && average < 50) {
-        alert(name + " " + "you got C Grade");
-        result.innerHTML=( name + " " + "You Got C Grade")
-      } else if (average >= 50 && average < 60) {
-        alert(name + " " + "you got B Grade");
-        result.innerHTML=( name + " " + "You Got B Grade")
-      } else if (average >= 60 && average < 70) {
-        alert(name + " " + "you got A- Grade");
-        result.innerHTML=( name + " " + "You Got A- Grade")
-      } else if (average >= 70 && average < 80) {
-        alert(name + " " + "you got A Grade");
-        result.innerHTML=( name + " " + "You Got A Grade")
-      } else if (average >= 80 && average <= 100) {
-        alert(name + " " + "you got A+ Grade");
-        result.innerHTML=( name + " " + "You Got A+ Grade")
-      } else {
-        alert( name + " " + "you are Faild ");
-        result.innerHTML=( name + " " + "YOU ARE FAILED")
-      }
+  if ((math > 32) && (english > 32) && (physics > 32) && (chemistry > 32) && (higherMath > 32)) {
 
+    if (average >= 33 && average < 40) {
+      alert(name + " " + "you got D Grade");
+      result.innerHTML = name + " " + "You Got D Grade";
+    } else if (average >= 40 && average < 50) {
+      alert(name + " " + "you got C Grade");
+      result.innerHTML = name + " " + "You Got C Grade";
+    } else if (average >= 50 && average < 60) {
+      alert(name + " " + "you got B Grade");
+      result.innerHTML = name + " " + "You Got B Grade";
+    } else if (average >= 60 && average < 70) {
+      alert(name + " " + "you got A- Grade");
+      result.innerHTML = name + " " + "You Got A- Grade";
+    } else if (average >= 70 && average < 80) {
+      alert(name + " " + "you got A Grade");
+      result.innerHTML = name + " " + "You Got A Grade";
+    } else if (average >= 80 && average <= 100) {
+      alert(name + " " + "you got A+ Grade");
+      result.innerHTML = name + " " + "You Got A+ Grade";
+    }
+  } else {
+    alert(name + " " + "you are Faild ");
+    result.innerHTML = name + " " + "you are failed";
+    result.style.color = "red"
+  }
+  result.style.backgroundColor = "black";
 });
-
-
 
 // const header = document.querySelector("h1")
 // const button = document.querySelector("button")

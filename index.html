@@ -1,107 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>MarkSheet Generator</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MarkSheet Generator</title>
 
-   <style>
+    <style>
       * {
-         margin: 0;
-         padding: 0;
-         box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
       body {
-         background-color: aqua;
-         font-family: Arial, sans-serif;
+        background-color: aqua;
+        font-family: Arial, sans-serif;
+      }
+      .container{
+         padding-bottom: 100px;
       }
       h1 {
-         text-align: center;
-         margin-top: 50px;
-         color: black;
+        text-align: center;
+        margin-top: 50px;
+        color: black;
       }
       form {
-         width: 500px;
-         margin: 50px auto;
-         border: 1px solid black;
-         border-radius: 10px;
-         padding: 30px;
-         background-color: rgb(139, 253, 253);
-         display: grid;
-         grid-template-columns: 1fr 1fr;
-         gap: 20px;
+        width: 500px;
+        margin: 50px auto;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 30px;
+        background-color: rgb(139, 253, 253);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
       }
       label {
-         font-weight: bold;
-         margin-bottom: 5px;
-         display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: block;
       }
       input {
-         width: 100%;
-         height: 35px;
-         border-radius: 5px;
-         border: 1px solid black;
-         padding: 5px;
+        width: 100%;
+        height: 35px;
+        border-radius: 5px;
+        border: 1px solid black;
+        padding: 5px;
       }
       .full-width {
-         grid-column: span 2;
-         display: flex;
-         justify-content: center;
-         margin-top: 20px;
+        grid-column: span 2;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
       }
       button {
-         width: 50%;
-         height: 40px;
-         border: 1px solid black;
-         border-radius: 10px;
-         background-color: #1101f0;
-         color: #fff;
-         font-size: 16px;
-         cursor: pointer;
+        width: 50%;
+        height: 40px;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: #1101f0;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
       }
       button:hover {
-         background-color: #0000cc;
+        background-color: #0000cc;
       }
 
-      #result{
-         text-align: center;
-         margin-top: 20px;
-         font-size: 20px;
-         font-weight: 600;
-         color: red;
+      #result {
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(0, 255, 34);
+        padding: 5px;
+        width: 350px;
+        height: 30px;
+        border-radius: 10px;
+        margin: 0 auto;
+        text-align: center;
       }
-   </style>
-   
-</head>
-<body>
-   <h1>Marksheet Generator </h1>
-   <form id="marksheet" action="#">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name">
-   
-      <label for="rollno">Roll No:</label>
-      <input type="number" id="rollno" name="rollno">
-   
-      <label for="math">Math:</label>
-      <input type="number" id="math" name="math">
-   
-      <label for="english">English:</label>
-      <input type="number" id="english" name="english">
-   
-      <label for="physics">Physics:</label>
-      <input type="number" id="physics" name="physics">
-   
-      <label for="chemistry">Chemistry:</label>
-      <input type="number" id="chemistry" name="chemistry">
-   
-      <label for="higherMath">Higher Math:</label>
-      <input type="number" id="higherMath" name="higherMath">
-   
-      <div class="full-width">
-         <button type="submit">Submit</button>
-      </div>
-   </form>
-   <p id="result" ></p>
-   <script src="js/script.js"></script>
-</body>
+    </style>
+  </head>
+  <body>
+    <h1>Marksheet Generator</h1>
+    <div class="container">
+      <form id="marksheet" action="#">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+
+        <label for="rollno">Roll No:</label>
+        <input type="number" id="rollno" name="rollno" />
+
+        <label for="math">Math:</label>
+        <input type="number" id="math" name="math" />
+
+        <label for="english">English:</label>
+        <input type="number" id="english" name="english" />
+
+        <label for="physics">Physics:</label>
+        <input type="number" id="physics" name="physics" />
+
+        <label for="chemistry">Chemistry:</label>
+        <input type="number" id="chemistry" name="chemistry" />
+
+        <label for="higherMath">Higher Math:</label>
+        <input type="number" id="higherMath" name="higherMath" />
+
+        <div class="full-width">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+      <p id="result"></p>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
 </html>
