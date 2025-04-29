@@ -39,7 +39,7 @@ formVlaues.addEventListener("submit", (e) => {
   } else {
     alert(name + " " + "you are Faild ");
     result.innerHTML = name + " " + "you are failed";
-    result.style.color = "red"
+    result.style.color = "#f32525"
   }
   result.style.backgroundColor = "black";
 });
